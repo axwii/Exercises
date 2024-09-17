@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        display: grid;
+        place-items: center;
+        background-color: #f4f4f9;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <h1>Random number</h1>
-        <p id="numbersTo100"></p>
-        <p id="numbersToMax">400</p>
+      <h1>Random number</h1>
+      <p>
+        Random number between 0 and 100: <strong id="numbersTo100"></strong>
+      </p>
+      <p>
+        Random number between 0 and 'defined in code':
+        <strong id="numbersToMax">400</strong>
+      </p>
     </main>
-</body>
+  </body>
 </html>
 <script src="index.js"></script>
