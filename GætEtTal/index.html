@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gæt et tal!</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        display: grid;
+        place-items: center;
+        background-color: #f4f4f9;
+      }
+      h1 {
+        color: #333;
+      }
+      input {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .feedback {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+      .celebration {
+        display: none;
+        margin-top: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Gæt et tal mellem 0 og 100!</h1>
+    <input type="number" id="guessInput" placeholder="Indtast dit gæt" />
+    <button id="guessButton">Gæt</button>
+    <p class="feedback" id="feedback"></p>
+    <div class="celebration" id="celebration">
+      🎉🎉🎉 Tillykke, du har gættet det rigtige tal! 🎉🎉🎉
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
