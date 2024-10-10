@@ -1,0 +1,53 @@
+/* Slippe for den grimme(?) blå focus på knappen  */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  background-color: var(--primary-page-bg);
+  color: var(--primary-text-color);
+}
+
+body[data-theme="light"] {
+  --primary-page-bg: #eaebeb;
+  --primary-text-color: #353d44;
+  --header-bg-col: #f0f0f0;
+}
+
+body[data-theme="dark"] {
+  --primary-page-bg: #353d44;
+  --primary-text-color: #eaebeb;
+  --header-bg-col: #1a1a1a;
+}
+
+body[data-theme="hawaii"] {
+  --primary-page-bg: #80e954;
+  --primary-text-color: #694906;
+  --header-bg-col: #ff6347;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--header-bg-col);
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
